@@ -2,4 +2,11 @@
   box-sizing: border-box;
 }
 
+html { 
+  background: linear-gradient(#615dad, #ffc8da) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
