@@ -10,3 +10,19 @@ html {
   background-size: cover;
 }
 
+.image {
+  border-radius: 1% 1% 0 0;
+}
+
+h1 {
+  font-family: 'Lobster', cursive;
+  color:#ffffff;
+  font-size: 3.5em;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.2em;
+}
