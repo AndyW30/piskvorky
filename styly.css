@@ -2,8 +2,8 @@
   box-sizing: border-box;
 }
 
-html { 
-  background: linear-gradient(#615dad, #ffc8da) no-repeat center center fixed; 
+html {
+  background: linear-gradient(#615dad, #ffc8da) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -16,13 +16,55 @@ html {
 
 h1 {
   font-family: 'Lobster', cursive;
-  color:#ffffff;
+  color: #ffffff;
   font-size: 3.5em;
   text-align: center;
 }
 
-p{
+p {
   text-align: center;
   color: #ffffff;
   font-size: 1.2em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.mainpart {
+  background-color: #283e50;
+  padding: 1rem 1.5rem;
+}
+
+.button1 {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #1fcca4;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+}
+
+.button1:hover {
+  background-color: #1cbb96;
+}
+
+.button2 {
+  color: #ffffff;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #0197f6;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2em;
+}
+
+.button2:hover {
+  background-color: #0090e9;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+
 }
