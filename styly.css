@@ -69,6 +69,7 @@ h1 {
   display: flex;
   flex-direction: column;
   width: 29%;
+  height: auto;
   text-align: center;
   margin: auto;
   position: relative;
@@ -77,17 +78,30 @@ h1 {
 }
 
 
-@media all and (max-width:768px) {
+@media all and (max-width:600px) {
   .mainpart {
-    font-size: 1em;
+    font-size: 1.5em;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .container {
     width: 75%;
   }
+}
 
+@media only screen and (min-width: 600px) and (max-width:1200px) {
+  .mainpart {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3em;
+  }
+
+  .container {
+    width: 75%;
+  }
 }
