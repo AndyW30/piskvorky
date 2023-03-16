@@ -11,36 +11,37 @@ html {
 }
 
 .image {
-  border-radius: 1% 1% 0 0;
+  border-radius: 1.7% 1.7% 0 0;
+  flex-basis: 100%;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
   color: #ffffff;
   font-size: 3.5em;
-  text-align: center;
+  padding: 0;
+  margin: 1.5rem;
 }
 
-p {
-  text-align: center;
-  color: #ffffff;
-  font-size: 1.2em;
-  font-family: 'Times New Roman', Times, serif;
-}
 
 .mainpart {
   background-color: #283e50;
   padding: 1rem 1.5rem;
+  color: #ffffff;
+  font-size: 1.2em;
 }
 
 .button1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
   color: #ffffff;
   font-family: 'Times New Roman', Times, serif;
   background-color: #1fcca4;
   cursor: pointer;
   text-decoration: none;
-  text-align: center;
-  font-size: 2em;
+  font-size: 1.3rem;
 }
 
 .button1:hover {
@@ -48,13 +49,16 @@ p {
 }
 
 .button2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
   color: #ffffff;
   font-family: 'Times New Roman', Times, serif;
   background-color: #0197f6;
   cursor: pointer;
   text-decoration: none;
-  text-align: center;
-  font-size: 2em;
+  font-size: 1.3rem;
 }
 
 .button2:hover {
@@ -64,7 +68,26 @@ p {
 .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
+  width: 29%;
+  text-align: center;
+  margin: auto;
+  position: relative;
+  top: 2.7rem;
+  text-align: center;
+}
+
+
+@media all and (max-width:768px) {
+  .mainpart {
+    font-size: 1em;
+  }
+
+  h1 {
+    font-size: 2em;
+  }
+
+  .container {
+    width: 75%;
+  }
 
 }
