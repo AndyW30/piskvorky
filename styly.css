@@ -12,40 +12,52 @@ html {
   background-size: cover;
 }
 
-/* flexibilní obrázek se zahlými rohy nahoře*/
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #ffffff;
+  background-color: #283e50;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  margin: 4rem auto;
+  border-radius: 1.7% 1.7% 0 0;
+  width: 28vw;
+}
 
 .image {
   border-radius: 1.7% 1.7% 0 0;
-  flex-basis: 100%;
+  width: 100%;
 }
 
 h1 {
   font-family: 'Lobster', cursive;
-  color: #ffffff;
   font-size: 3rem;
-  padding: 0;
-  margin: 1.5rem;
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+p {
+  line-height: 1.4;
+  margin: 1.2rem;
 }
 
 
-.mainpart {
-  background-color: #283e50;
-  padding: 1rem 1.5rem;
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+
+a {
   color: #ffffff;
-  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 14px;
 }
 
 .button1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
-  color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
   background-color: #1fcca4;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.3rem;
+  margin-bottom: 0.9px;
 }
 
 .button1:hover {
@@ -53,40 +65,12 @@ h1 {
 }
 
 .button2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 4rem;
-  color: #ffffff;
-  font-family: 'Times New Roman', Times, serif;
   background-color: #0197f6;
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 1.3rem;
 }
 
 .button2:hover {
   background-color: #0090e9;
 }
-
-.container {
-  display: flex;
-  flex-direction: column;
-  width: 29vw;
-  height: auto;
-  margin: 10vh auto;
-  text-align: center;
-}
-
-/* jiný způsob nastavení na střed, který jsem nepoužila
-  width: 29%;
-  height: auto;
-  text-align: center;
-  margin: auto;
-  position: relative;
-  top: 2.7rem;
-  text-align: center;
-*/
 
 @media all and (max-width:600px) {
   .mainpart {
