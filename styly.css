@@ -4,6 +4,7 @@
 
 /* pozadí s přechodem*/
 
+
 html {
   background: linear-gradient(#615dad, #ffc8da) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -82,10 +83,10 @@ a {
   display: block;
   text-align: center;
   color: #ffffff;
-  width: 35rem;
-  margin: 4rem auto;
+  margin: 1rem auto;
   max-width: 80vmin;
 }
+
 
 h2 {
   text-transform: uppercase;
@@ -98,12 +99,65 @@ h2 {
 }
 
 .dot {
-  height: 25px;
-  width: 25px;
+  min-height: 25px;
+  min-width: 25px;
   border-radius: 50%;
-  display: inline-block;
   border-style: solid;
   border-width: 3px;
   border-color: white;
   margin-left: 4px;
+
+}
+
+
+.icons {
+  display: flex;
+  justify-content: flex-end;
+  width: 80vmin;
+}
+
+.home {
+  background-color: #1fcca4;
+  border-radius: 10%;
+  margin-right: 8px;
+  width: 50px;
+  height: 50px;
+}
+
+.home:hover {
+  background-color: #1cbb96;
+  cursor: pointer;
+}
+
+.restart {
+  background-color: #0197f6;
+  border-radius: 10%;
+  width: 50px;
+  height: 50px;
+}
+
+.restart:hover {
+  background-color: #0090e9;
+  cursor: pointer;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid black;
+  width: 80vmin;
+  height: 80vmin;
+}
+
+
+button {
+  background-color: #dbd0e1;
+  height: 100%;
+  width: 100%;
+  border: 1px solid black;
+}
+
+button:hover {
+  background-color: #e6e1e9;
+  cursor: pointer;
 }
