@@ -161,3 +161,7 @@ button:hover {
   background-color: #e6e1e9;
   cursor: pointer;
 }
+
+td {
+  padding: 0;
+}
