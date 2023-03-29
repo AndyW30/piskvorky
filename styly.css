@@ -124,7 +124,8 @@ h2 {
   height: 50px;
 }
 
-.home:hover {
+.home:hover,
+.home:focus {
   background-color: #1cbb96;
   cursor: pointer;
 }
@@ -136,7 +137,8 @@ h2 {
   height: 50px;
 }
 
-.restart:hover {
+.restart:hover,
+.restart:focus {
   background-color: #0090e9;
   cursor: pointer;
 }
