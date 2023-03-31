@@ -80,7 +80,6 @@ a {
 }
 
 .container2 {
-  display: block;
   text-align: center;
   color: #ffffff;
   margin: 1rem auto;
@@ -113,7 +112,7 @@ h2 {
 .icons {
   display: flex;
   justify-content: flex-end;
-  width: 80vmin;
+  width: 40rem;
 }
 
 .home {
@@ -146,24 +145,28 @@ h2 {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  border: 1px solid black;
+  border: 2px solid black;
   width: 80vmin;
   height: 80vmin;
-}
 
-
-button {
-  background-color: #dbd0e1;
-  height: 100%;
-  width: 100%;
-  border: 1px solid black;
-}
-
-button:hover {
-  background-color: #e6e1e9;
-  cursor: pointer;
 }
 
 td {
   padding: 0;
+  line-height: 0;
+}
+
+button {
+  background-color: #dbd0e1;
+  border: 1px solid black;
+  width: 8vmin;
+  height: 8vmin;
+  padding: 0;
+  margin: 0;
+}
+
+
+button:hover {
+  background-color: #e6e1e9;
+  cursor: pointer;
 }
