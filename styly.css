@@ -175,3 +175,21 @@ button:hover {
   background-color: #e6e1e9;
   cursor: pointer;
 }
+
+@keyframes zoom-in {
+  from {
+    transform: scale(0);
+    border-color: transparent;
+  }
+
+  to {
+    transform: scale(1);
+    border: transparent;
+  }
+}
+
+.zoom-in {
+  animation-name: zoom-in;
+  animation-duration: 0.45s;
+  animation-timing-function: ease-in-out;
+}
