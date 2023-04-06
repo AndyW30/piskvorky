@@ -154,13 +154,9 @@ table {
 td {
   padding: 0;
   line-height: 0;
-  background-color: #dbd0e1;
+  background-color: #eeb3fd;
 }
 
-.turn {
-  font-size: 30px;
-  color: white;
-}
 
 button {
   width: 8vmin;
@@ -169,10 +165,12 @@ button {
   margin: 0;
   border: 1px solid black;
   font-size: 5vmin;
+  background-color: #eeb3fd;
 }
 
 button:hover {
-  background-color: #e6e1e9;
+  background-color: #eeb3fd;
+  ;
   cursor: pointer;
 }
 
