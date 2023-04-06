@@ -180,11 +180,13 @@ button:hover {
   from {
     transform: scale(0);
     border-color: transparent;
+    background-color: transparent;
   }
 
   to {
     transform: scale(1);
     border: transparent;
+    background-color: transparent;
   }
 }
 
