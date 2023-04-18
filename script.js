@@ -1,30 +1,61 @@
-let turn = document.getElementById('turn').textContent;
-const td = document.getElementsByTagName('td');
+import { findWinner } from 'https://unpkg.com/piskvorky@0.1.4';
+
+let turn = document.querySelector('#turn').textContent;
+
+//Nastav posluchač události všem políčkům.
+const allButtons = document.querySelectorAll('button');
 
 const addText = (e) => {
-  value = e.target.textContent;
+  let value = e.target.textContent;
   if (!value) {
     e.target.innerHTML = turn;
     if (turn === 'x') {
-      document.getElementById('turn').innerHTML = 'o';
+      document.querySelector('#turn').innerHTML = 'o';
       turn = 'o';
       e.target.classList.add('zoom-in');
     } else {
-      document.getElementById('turn').innerHTML = 'x';
+      document.querySelector('#turn').innerHTML = 'x';
       turn = 'x';
       e.target.classList.add('zoom-in');
     }
   }
 };
 
-for (let i = 0; i < td.length; i++) {
-  td[i].addEventListener('click', addText);
-  td[i].addEventListener('animationend', function () {
+allButtons.forEach((button) => {
+  button.addEventListener('click', addText);
+  button.addEventListener('animationend', function () {
     this.classList.remove('zoom-in');
   });
-}
+});
 
-const restartGame = document.getElementById('restart');
+const checkWinner = () => {
+  const gameFieldArray = Array.from(allButtons).map((button) => {
+    if (button.classList.contains('o')) {
+      return 'x';
+    }
+    if (button.classList.contains('o')) {
+      return 'o';
+    } else {
+      return '_';
+    }
+  });
+  //button.classList.contains('o')
+  const winner = findWinner(gameFieldArray);
+  if (winner === 'o' || winner === 'x') {
+    setTimeout(function () {
+      alert(`Vyhrál hráč se symbolem ${winner}! `);
+      location.reload();
+    }, 500);
+  }
+};
+
+//kontrola vítězství po každém kliknutí na tlačítko
+allButtons.forEach((button) => {
+  button.addEventListener('click', checkWinner);
+});
+
+//restart hry
+const restartGame = document.querySelector('.restart');
 restartGame.addEventListener('click', function (event) {
   if (!confirm('Opravdu chcete restartovat hru?')) {
     event.preventDefault();
