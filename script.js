@@ -30,20 +30,20 @@ allButtons.forEach((button) => {
 
 const checkWinner = () => {
   const gameFieldArray = Array.from(allButtons).map((button) => {
-    if (button.classList.contains('o')) {
+    if (button.textContent === 'x') {
       return 'x';
     }
-    if (button.classList.contains('o')) {
+    if (button.textContent === 'o') {
       return 'o';
     } else {
       return '_';
     }
   });
-  //button.classList.contains('o')
+
   const winner = findWinner(gameFieldArray);
   if (winner === 'o' || winner === 'x') {
     setTimeout(function () {
-      alert(`Vyhrál hráč se symbolem ${winner}! `);
+      alert(`Vyhrál hráč se symbolem ${winner} ! `);
       location.reload();
     }, 500);
   }
