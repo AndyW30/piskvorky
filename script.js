@@ -46,6 +46,11 @@ const checkWinner = () => {
       alert(`Vyhrál hráč se symbolem ${winner} ! `);
       location.reload();
     }, 500);
+  } else if (winner === `tie`) {
+    setTimeout(() => {
+      alert(`Hra skončila neroznodně.`);
+      location.reload();
+    }, 500);
   }
 };
 
