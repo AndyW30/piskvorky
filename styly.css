@@ -167,6 +167,7 @@ button {
   border: 1px solid black;
   font-size: 5vmin;
   background-color: #eeb3fd;
+  color: black
 }
 
 button:hover {
@@ -194,4 +195,3 @@ button:hover {
   animation-duration: 0.45s;
   animation-timing-function: ease-in-out;
 }
-
